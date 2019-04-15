@@ -9,7 +9,8 @@ class Sketch extends PApplet {
 
   override def settings(): Unit = {
     size(500, 500, P3D)
-    pixelDensity(2)
+
+    pixelDensity(displayDensity())
   }
 
   override def setup(): Unit = {
